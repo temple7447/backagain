@@ -35,6 +35,8 @@ router.get('/Plantoon', (req, res) => {
         console.log(err)
     })
 })
+
+
 router.post('/PlantoonDelete', (req, res) => {
   const {id} = req.body;
     Plantoon.findOneAndDelete({_id:id})
